@@ -844,11 +844,10 @@ header {
 @media only all and (max-width: 768px) {
 	body {
 		font-size: 0.8em;
-
 	}
 
 	h2 {
-		width: 0.9em;
+		width: 0.8em;
 	}
 
 	.search-bar-input {
@@ -861,7 +860,15 @@ header {
 
 	.carousel-div {
 		margin-top: 30px;
-		height: 200px;
+		height: 150px;
+	}
+
+	#song-menu {
+		z-index: 1;
+	}
+
+	#song-menu2 {
+		z-index: 1;
 	}
 
 	.album-artist {
