@@ -863,5 +863,12 @@ header {
 		overflow-x: scroll;
 	}
 
+	.stations {
+		overflow-x: scroll;
+	}
+
+	.genre img {
+		width: 200px;
+	}
 
 }
