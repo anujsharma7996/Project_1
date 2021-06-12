@@ -846,4 +846,8 @@ header {
 		display: none;
 	}
 
+	.fa-search {
+		font-size: 1em;
+	}
+
 }
