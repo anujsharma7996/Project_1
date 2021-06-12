@@ -859,4 +859,8 @@ header {
 		padding-right: 30px;
 	}
 
+	.explore-section {
+		overflow-x: scroll;
+	}
+
 }
