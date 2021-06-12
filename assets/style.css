@@ -844,6 +844,11 @@ header {
 @media only all and (max-width: 768px) {
 	body {
 		font-size: 0.8em;
+
+	}
+
+	h2 {
+		0.9em
 	}
 
 	.search-bar-input {
@@ -884,7 +889,7 @@ header {
 	}
 
 	.album-text2 {
-		width: 130px;
+		width: 60px;
 	}
 
 	.album-artist2 img {
