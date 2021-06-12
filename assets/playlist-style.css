@@ -1,0 +1,531 @@
+/* 
+
+Color Scheme:
+
+Primary: Dark Blue, #0e1f2fff
+Secondary: Light Blue, #004666ff, #003852
+Secondary2: Jet: #333333ff
+Accent: Hot Pink, #ff57bbff
+Primary Font Color: Ghost White, #fafaffff
+Seoncdary Font Color: Gray x11 Gray, #b8b8b8ff
+
+*/
+
+body {
+	font-family: sans-serif;
+	background-color: #0e1f2fff;
+	color: #fafaffff;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.box-shadow-all {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Header --------------- */
+
+header {
+	position: fixed;
+	background-color: #0e1f2fff;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 54px;
+	z-index: 1;
+}
+
+.header-container {
+	display: flex;
+	column-gap: 3%;
+	margin: 10px 5% 0px 5%;
+}
+
+.logo {
+	color: white;
+	margin: 5px;
+	min-width: 90px;
+}
+
+.logo i {
+	color: red;
+}
+
+.logo a {
+	display: inline-block;
+	color: red;
+}
+
+.horizontal-list {
+	white-space: nowrap;
+	list-style: none;
+	color: white;
+}
+
+.horizontal-list li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.horizontal-list a {
+	text-decoration: none;
+	color: white;
+}
+
+#home:hover, #favourites:hover, #library:hover {
+	color: #ff57bbff;
+}
+
+.search-bar {
+	display: block;
+	align-self: center;
+	margin-left: 20%;
+	width: 30%;
+}
+
+.search-bar-form {
+	height: 30px;
+}
+
+.search-bar-input {
+	display: inline-block;
+	width: 90%;
+	height: 28px;
+	border-radius: 5px;
+	float: left;
+	background-color: #003852;
+	border: none;
+}
+
+.search-bar-form button{
+	display: inline-block;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	color: whitesmoke;
+	margin-top: 7px;
+}
+
+.bell-noti {
+	color: white;
+	margin-top: 12px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 1.5em;
+}
+
+#profile-photo {
+	object-fit: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+/* Main Section ---------------*/
+
+.main-section {
+	display: flex;
+	position: absolute;
+	width: 90%;
+	margin: 5% 5% 0px 5%;
+}
+
+/* Playlist Section */
+
+.playlist {
+	display: flex;
+	flex-direction: column;
+	flex: 10;
+	margin-right: 10px;
+	background-color: #003852;
+	border-radius: 10px;
+}
+
+/* Banner */
+
+.banner {
+	display: flex;
+	padding-right: 5px;
+	border-radius: 10px 0 0 0;
+}
+
+.banner-img {
+	width: 30%;
+	border-radius: 10px 0 10px 0;
+	float: left;
+}
+
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 300px;
+	/*background-color: red;*/
+	margin: 5% 2% 5% 5%;
+}
+
+.banner-text h1 {
+	display: inline-block;
+	margin: 1% 70% 1% 0;
+}
+
+.banner-text span, .banner-text p, .banner-text a {
+	text-decoration: none;
+	color: #b8b8b8ff;
+}
+
+.banner-text p {
+	margin-bottom: 6%;
+}
+
+.play-all-button {
+	color: #fafaffff;
+	width: 20%;
+	height:35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 10%;
+	margin-bottom: 2%;
+	background: linear-gradient(90deg, #e66465, #9198e5);
+}
+
+.play-all a {
+	color: #fafaffff;;
+}
+
+.banner-text span {
+	color: #fafaffff;;
+}
+
+.tracks {
+	font-size: 0.8em;
+}
+
+
+/* Playlist ------------- */
+
+/*Removing scrollbar but keeping fuctionality*/
+
+.remove-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.remove-scrollbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.playlist-section {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 35vh;
+	margin-top: 20px;
+}
+
+.album-artist2 {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+	height: auto;
+	align-items: center;
+	padding: 7px 0 7px 0;
+}
+
+.album-artist2 img {
+	width: 70px;
+	margin-right: 10px;
+	border-radius: 5px
+}
+
+.fa-heart {
+	color: white;
+}
+
+.fav-icon {
+	margin-left: 60%;
+}
+
+.queue-div {
+	color: white;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-family: sans-serif;
+	font-size: 0.9em;
+}
+
+.album-text2 {
+	color: #fafaffff;
+	width: 160px;
+}
+
+.fa-play {
+	color: #ff57bbff;
+	margin-right: 4px;
+}
+
+.duration {
+	font-size: 0.8em;
+	color: darkgrey;
+	margin-right: 5%;
+}
+
+.song-date {
+	font-size: 0.8em;
+	color: darkgrey;
+	/*padding-top: 50px;*/
+}
+
+.fav-icon .fas {
+	color:#ff57bbff;
+}
+
+.queue-container {
+	display: flex;
+}
+
+.fa-plus {
+	margin-left: 50px;
+	#fafaffff
+}
+
+.outer-glow {
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Aside Panel -------------- */
+
+.aside-panel {
+	display: flex;
+	flex-direction: column;
+	/*background-color: red;*/
+	height: 450px;
+	margin-left: 10px;
+	flex: 3;
+}
+
+
+/* Similar Artists --------------- */
+
+.similar-artists {
+	display: flex;
+	flex-direction: column;
+}
+
+.similar-artist-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.similar-artist-heading h2 {
+	margin: 0px;
+}
+
+.view-all a{
+	text-decoration: none;
+	color: #b8b8b8ff;
+	font-size: 0.9em;
+}
+
+.album-artist {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+.album-artist img {
+	width: 80px;
+	float: left;
+	border-radius: 5px;
+}
+
+.album-div {
+	position: relative;
+}
+
+.album-artist span {
+	margin-left: 15px;
+}
+
+.song-name {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.song-date {
+	font-size: 0.8em;
+	color: darkgrey;
+}
+
+.album-text {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.fa-ellipsis-h {
+	font-size: 1em;
+	margin-bottom: 5px;
+	color: gray;
+}
+
+.song-duration {
+	font-size: 0.7em;
+	color: dimgrey;
+}
+
+
+/* Recently Played -------------- */
+
+.recent-list {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 35vh;
+}
+
+.recently-played-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.fa-heart:hover {
+	color: #ff57bbff;
+}
+
+.fa-plus:hover {
+	color: #ff57bbff;
+}
+
+
+/* Music Player ---------------*/
+
+.music-player {
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	background-color: #333333ff;
+}
+
+.music-player .album-artist2 {
+	width: 15%;
+	margin: 5px 5% 5px 5%;
+}
+
+.music-player .album-text2 {
+	width: 120px;
+}
+
+.music-player .fav-icon {
+	margin-top: 10px;
+}
+
+
+/* Media Control (Buttons and Progress Bar) */
+
+.media-control {
+	display: flex;
+	flex-direction: column;
+	/*margin: 5px 5% 5px 5%;*/
+	justify-content: center;
+	align-items: center;
+}
+
+.media-buttons {
+	display: flex;
+	color: #b8b8b8ff;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.media-buttons i {
+	margin-right: 35px;
+}
+
+.media-buttons .fa-redo {
+	margin: 0px;
+}
+
+.media-buttons .fa-pause-circle {
+	margin-top: -5px;
+	font-size: 1.5em;
+}
+
+.media-buttons i:hover {
+	color: #fafaffff;
+}
+
+.fa-heart:hover {
+	color: #ff57bbff;
+}
+
+.media-progress {
+	display: flex;
+}
+
+.media-progress span {
+	color: #fafaffff;
+	font-size: 0.8em;
+	margin: 0px 8px 0px 8px;
+}
+
+.media-progress progress {
+	width: 400px;
+	height: 10px;
+}
+
+
+/* Misc and Volume Control */
+
+.misc-volume {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 5% 5px 5%;
+}
+
+.misc-volume div {
+	margin-left: 10px;
+}
+
+.misc-volume i {
+	color: #b8b8b8ff;
+	font-size: 1em;
+	margin: 0px 8px 0px 8px;
+}
+
+.misc-volume i:hover {
+	color: #fafaffff;
+}
+
+.misc-volume progress {
+	width: 60px;
+	height: 10px;
+}
+
+.misc-volume-bar {
+	margin-top: -5px; 
+}
+
+/* Open Music Player Pop-Up */
+
+#music-player-fixed:target {
+	width: 100%;
+	height: 65px;
+}
+
+
+.album-artist2:hover .box-shadow-all {
+	box-shadow: 0px 0px 15px rgba(255, 255, 255, 1.0);
+}
