@@ -879,4 +879,12 @@ header {
 		overflow-x: scroll;
 	}
 
+	.album-text2 {
+		width: 130px;
+	}
+
+	.album-artist2 img {
+		50px
+	}
+
 }
