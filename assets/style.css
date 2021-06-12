@@ -871,4 +871,12 @@ header {
 		width: 200px;
 	}
 
+	.genre-container p {
+		width: 160px;
+	}
+
+	.english-songs-div {
+		overflow-x: scroll;
+	}
+
 }
