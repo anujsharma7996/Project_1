@@ -847,7 +847,11 @@ header {
 	}
 
 	.fa-search {
-		font-size: 1.2em;
+		font-size: 1.3em;
+	}
+
+	.carousel-div {
+		height: 200px;
 	}
 
 }
