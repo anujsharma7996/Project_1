@@ -837,3 +837,12 @@ header {
 	height: 1px;
 	background-color: #b8b8b8ff;
 }
+
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+	.search-bar-input {
+		display: none;
+	}
+}
