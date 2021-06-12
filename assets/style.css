@@ -845,4 +845,8 @@ header {
 	.search-bar-input {
 		width: 0px;
 	}
+
+	body {
+		background-color: red;
+	}
 }
