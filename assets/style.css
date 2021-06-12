@@ -843,6 +843,6 @@ header {
 
 @media only screen and (max-width: 768px) {
 	.search-bar-input {
-		display: none;
+		width: 0px;
 	}
 }
