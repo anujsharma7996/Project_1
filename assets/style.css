@@ -842,6 +842,10 @@ header {
 /* Media Query */
 
 @media only all and (max-width: 768px) {
+	body {
+		font-size: 0.8em;
+	}
+
 	.search-bar-input {
 		display: none;
 	}
