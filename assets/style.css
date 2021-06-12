@@ -887,4 +887,8 @@ header {
 		width: 50px;
 	}
 
+	.queue-section-container {
+		margin-top: 30px;
+	}
+
 }
