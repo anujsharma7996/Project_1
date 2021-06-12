@@ -884,7 +884,7 @@ header {
 	}
 
 	.album-artist2 img {
-		50px
+		width: 50px;
 	}
 
 }
